@@ -1,6 +1,9 @@
 function minDate(dates) {
   //write you code here
-	console.log(dates[0])
+	const minDate = new Date(Math.min(...dates.map(date => new Date(date))));
+  
+  // Log the minimum date
+  console.log(minDate.toISOString().split('T')[0]); 
 }
 
 // Do not change the code
